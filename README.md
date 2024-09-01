@@ -1,12 +1,12 @@
 
-# <span style="text-align:center; background: linear-gradient(#5959f3,#15d0ff); color: transparent; background-clip: text;">OPPS CONCEPTS IN JAVASCRIPT...</span>
+# OPPS CONCEPTS IN ``javaScript ``
 
 <hr>
 
 <span><img src="./asstes/comp.jpg" height="200px" width="300px"></span>
 
 ## object orianted programming
- ```java 
+ ```javascript 
  //to structure our code..
   1 prototype
   2 new operator
@@ -25,9 +25,41 @@
 
  ```java
 
- 1 arr.__proto__(refrence) <--- refrence of prototype boject
+ 1 arr.__proto__(refrence) <--- refrence of prototype object
 
  2 Array.prototype() <--- actual Array prototype object 
  
  3 String.prototype() <--- actual Strng prototype object 
   ````
+
+  ```javascript
+
+// browser console..
+
+  let arr=[1, 2, 3, 4]
+
+  >arr
+  0: 1
+  1: 2
+  2: 3
+  3: 4
+
+  length: 4[[Prototype]]: Array(0)
+
+  // protype consist all methods related to array like eg. push ,pop splice...
+
+  /* and we crate new array that time we crate new instance of array object so our crate array access array prototype methods.. */
+  ````
+
+  ```javascript 
+  // chnage the defination of push function
+   
+arr.__prototype.push = function(num){
+    resturn(`you want push ${num} but these time you are not able to push number`)
+}
+
+> arr.push(5)
+> you want push 5 but these time you are not able to push number
+
+
+  ```
