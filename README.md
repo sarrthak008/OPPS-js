@@ -77,6 +77,8 @@ function makeStudent(name,rollnum){
 
 let s1 = makeStudent('sarthak',12)
 
+let s2 = makeStudent('sarth',13)
+
 console.log(s1.say)
 
   // these function
