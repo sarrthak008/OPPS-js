@@ -61,5 +61,24 @@ arr.__prototype.push = function(num){
 > arr.push(5)
 > you want push 5 but these time you are not able to push number
 
+  ```
+
+  ### FACTORY ```FUNCTIONS```
+
+  ```javascript
+function makeStudent(name,rollnum){
+    const student= {
+       name:name,
+       roll_num:rollnum,
+       say(){`my name is ${this.name}`}
+    };
+    return student
+}
+
+let s1 = makeStudent('sarthak',12)
+
+console.log(s1.say)
+
+  // these function
 
   ```
